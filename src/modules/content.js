@@ -180,21 +180,39 @@ function Content(){
                             </Box>
                         </Box>
 
-                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17'}}>
+                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17', position:'relative'}}>
                             <Box>
                                 <Typography>How about this instead?</Typography>
                             </Box>
+                            <Box>
+                                <Box sx={{position:'absolute', left:'0', top:'0', transform:'translateX(calc(-100% - 15px))'}}>
+                                <svg fill="none" height="18" viewBox="0 0 17 18" width="17"><path d="M15.5036 3.11002L12.5357 15.4055C12.2666 16.5204 10.7637 16.7146 10.22 15.7049L7.4763 10.6094L2.00376 8.65488C0.915938 8.26638 0.891983 6.73663 1.96711 6.31426L13.8314 1.65328C14.7729 1.28341 15.741 2.12672 15.5036 3.11002ZM7.56678 10.6417L7.56645 10.6416C7.56656 10.6416 7.56667 10.6416 7.56678 10.6417L7.65087 10.4062L7.56678 10.6417Z" fill="#0091ff" stroke="var(--ds-background-100)" stroke-width="1.5"></path></svg>
+                                </Box>
+                                <Box sx={{paddingX:'4px', background:'#0091ff', position:'absolute', borderRadius:'6px', color:'black', left:'0', top:'16px', transform:'translateX(calc(-100% - 30px))'}}>
+                                    <Typography sx={{fontSize:'11px', fontWeight:'500'}}>Pranathi</Typography>
+                                </Box>
+                            </Box>
                         </Box>
 
-                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-start', border: '1px solid #ffffff17'}}>
+                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-start', border: '1px solid #ffffff17', position:'relative'}}>
                             <Box>
                                 <Typography>I like it. Does this work with</Typography>
                                 <Typography>the brand tweaks <strong>@mamuso</strong>?</Typography>
                             </Box>
+
+                            {/* pointer */}
+                            <Box >
+                                <Box sx={{position:'absolute', right:'0',bottom:'20px', transform:'translateX(calc(100% + 30px))'}}>
+                                <svg style={{transform:'scaleX(-1)'}} fill="none" height="18" viewBox="0 0 17 18" width="17"><path d="M15.5036 3.11002L12.5357 15.4055C12.2666 16.5204 10.7637 16.7146 10.22 15.7049L7.4763 10.6094L2.00376 8.65488C0.915938 8.26638 0.891983 6.73663 1.96711 6.31426L13.8314 1.65328C14.7729 1.28341 15.741 2.12672 15.5036 3.11002ZM7.56678 10.6417L7.56645 10.6416C7.56656 10.6416 7.56667 10.6416 7.56678 10.6417L7.65087 10.4062L7.56678 10.6417Z" fill="#e5484d" stroke="var(--ds-background-100)" stroke-width="1.5"></path></svg>
+                                </Box>
+                                <Box sx={{paddingX:'4px', background:'#e5484d', position:'absolute', borderRadius:'6px', color:'black', right:'0', bottom:'10px', transform:'translateX(calc(100% + 45px))'}}>
+                                    <Typography sx={{fontSize:'11px', fontWeight:'500'}}>Rauno</Typography>
+                                </Box>
+                            </Box>
                         </Box>
 
 
-                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17'}}>
+                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17', position:'relative'}}>
                             <Box sx={{display:'flex', alignItems:'center'}}>
                                 <Typography>This looks great!</Typography>
                                 <Box sx={{height:'14px', width:'1px', marginLeft:'1px', background:'#ededed', animation:' cursoranim 1.5s steps(2) infinite'}} ></Box>
@@ -202,6 +220,9 @@ function Content(){
                                 <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M8.7071 3.39641C8.31657 3.00588 7.68341 3.00588 7.29288 3.39641L4.21966 6.46963L3.68933 6.99996L4.74999 8.06062L5.28032 7.53029L7.24999 5.56062V12.25V13H8.74999V12.25V5.56062L10.7197 7.53029L11.25 8.06062L12.3107 6.99996L11.7803 6.46963L8.7071 3.39641Z" fill="#0a0a0a" fill-rule="evenodd"></path></svg>
                                 </Box>
                             </Box>
+                            <Box sx={{position:'absolute', right:'0',bottom:'0px', transform:'translateX(calc(100% + 16px))'}}>
+                                <svg style={{transform:'scaleX(-1)'}} fill="none" height="18" viewBox="0 0 17 18" width="17"><path d="M15.5036 3.11002L12.5357 15.4055C12.2666 16.5204 10.7637 16.7146 10.22 15.7049L7.4763 10.6094L2.00376 8.65488C0.915938 8.26638 0.891983 6.73663 1.96711 6.31426L13.8314 1.65328C14.7729 1.28341 15.741 2.12672 15.5036 3.11002ZM7.56678 10.6417L7.56645 10.6416C7.56656 10.6416 7.56667 10.6416 7.56678 10.6417L7.65087 10.4062L7.56678 10.6417Z" fill="#0c9784" stroke="var(--ds-background-100)" stroke-width="1.5"></path></svg>
+                                </Box>
                         </Box>
                     </Box>
 
