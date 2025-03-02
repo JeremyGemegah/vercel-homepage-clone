@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material"
 import graph from '../images/image.avif'
+import '../App.css'
 
 function Content(){
     return(
@@ -24,6 +25,193 @@ function Content(){
 
             </Box>
 
+
+            {/* section */}
+
+            
+            
+            <Box>
+                <Box sx={{
+                    display:'grid',
+                    gridTemplateColumns:'repeat(2,calc(1079px/2))',
+                    height:'578px',
+                    border:'1px solid #ffffff17',
+                    borderTop:'none',
+                    borderBottom:'none'
+                    ,width:'100%'
+                    ,color:'white',
+                    overflow:'hidden'
+                }}>
+                   
+                    <Box sx={{
+                        boxSizing:'border-box',
+                        gridColumnStart:'1'
+                        ,gridColumnEnd:'span 1',
+                        borderRight: '1px solid #ffffff17',
+                        padding:'48px'
+                        ,overflow:'hidden',
+                        '& > *':{
+                            boxSizing:'border-box'
+                        }
+                        ,width:'100%'
+                        ,position:'relative'
+                        
+                        
+                        
+                    }}>
+
+                        <Box sx={{
+                            display:'flex'
+                            ,flexDirection:'column'
+                            ,width:'100%'
+                            ,flexGrow: 0,
+                            flexShrink:1
+                            ,overflow: 'hidden'
+                        }}>
+
+                    <Box sx={{
+                            border:'1px solid #ffffff17'
+                            ,maxWidth:'340px'
+                        ,borderRadius:'12px',
+                        padding:'12px'
+                            
+                        }}>
+                        <Box >
+                            <Box sx={{
+                                display:'flex',
+                                gap:'6px',
+                                marginBottom:'12px'
+                            }}>
+                                {Array.from( new Array(3)).map((_,index) => (
+                                    <Box sx={{
+                                        width:'8px'
+                                        ,height:'8px'
+                                        ,background:'#ffffff24'
+                                        ,borderRadius: '50%'
+                                    }}></Box>
+                                ))}
+                            </Box>
+                        </Box>
+                        <Box sx={{ '& > *': {
+                            maskImage: 'linear-gradient(to right, #454545 53.47%, transparent 100%)'
+                        }, color:'#ededed'}}>
+                            <Typography><Typography sx={{display:'inline', color:'#1f1f1f'}}><Typography sx={{ display:'inline', color:'#a1a1a1'}}>▲ ~ vercel-site/</Typography> git push</Typography></Typography>
+                            <Typography >Enumerating objects: 1, done.</Typography>
+                            <Typography>{"Counting objects: 100% (1/1), done."}</Typography>
+                            <Typography>{"Writing objects: 100% (1/1), 72 bytes, done."}</Typography>
+                            <Typography>{"Total 1 (delta 0), reused 0 (delta 0)."}</Typography>
+                            <Typography>{"To github.com:vercel/vercel-site.git"}</Typography>
+                            <Typography>&nbsp;&nbsp;&nbsp; 21326a9..81663c3 main -&gt; main</Typography>
+                        </Box>
+                    </Box>
+                    
+                    {/* other box */}
+                    <Box sx={{
+                            border:'1px solid #ffffff17'
+                            ,maxWidth:'340px'
+                            ,padding: '8px 12px 12px 12px'
+                            ,borderRadius:'12px'
+                            ,background:'#0a0a0a',
+                            marginTop:'-32px',
+                            zIndex: 3,
+                            position:'relative'
+                            ,alignSelf: 'flex-end'
+                            
+                          
+                        }}>
+                        <Box >
+                            <Box sx={{
+                                display:'flex',
+                                gap:'6px'
+                                ,marginBottom:'12px'
+                                
+                            }}>
+                                {Array.from( new Array(3)).map((_,index) => (
+                                    <Box sx={{
+                                        width:'8px'
+                                        ,height:'8px'
+                                        ,background: index === 1?  '#e5484d': ( index === 2? '#0091ff' : '#0c9784')
+                                        ,borderRadius: '50%',
+                                        
+                                    }} key={index}></Box>
+                                ))}
+                            </Box>
+                        </Box>
+
+
+                        <Box sx={{position:'relative'}}>
+                        <Typography sx={{
+                            position: 'absolute'
+                            ,fontSize: '36px'
+                            ,color: '#0a0a0a'
+                            ,zIndex:1
+                            ,textShadow:'-1px -1px 0 #454545,0 -1px 0 #454545,1px -1px 0 #454545,1px 0 0 #454545,1px 1px 0 #454545,0 1px 0 #454545,-1px 1px 0 #454545,-1px 0 0 #454545'
+                            ,letterSpacing:'-.075em'
+                            ,fontWeight:'600'
+                            ,width:'100%'
+                            ,textAlign:'center',
+                            top:'14%'
+                        }}>What will you ship?</Typography>
+                        <svg style={{ maskImage:'linear-gradient(180deg,#454545 30%,transparent 100%)'}} class="deploy-visual_grid__roLF7" fill="none" height="144" viewBox="0 0 312 144" width="312"><rect height="181" stroke="#1a1a1a" width="311" x="0.5" y="0.5"></rect><g filter="url(#filter1_d_1086_110200)"><path clip-rule="evenodd" d="M155.5 78L200 156H111L155.5 78Z" fill="#0a0a0a" fill-rule="evenodd"></path><path clip-rule="evenodd" d="M155.5 78L200 156H111L155.5 78Z" fill-rule="evenodd" stroke="#454545"></path></g></svg>
+                        </Box>
+                    </Box>
+
+                    </Box>
+
+                </Box>
+
+                {/* second column */}
+
+                <Box sx={{
+                    gridColumnStart:'2'
+                    ,gridColumnEnd:'span 1',
+                    padding:'48px'
+                }}>
+                    <Box sx={{
+                        display:'flex'
+                        ,flexDirection:'column'
+                        ,width:'100%'
+                        ,gap:'24px'
+                    }}>
+                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-start', border: '1px solid #ffffff17'}}>
+                            <Box>
+                                <Typography>Swapped out the <Typography sx={{display:'inline'}}>button</Typography>for</Typography>
+                                <Typography>some variants we needed</Typography>
+                            </Box>
+                        </Box>
+
+                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17'}}>
+                            <Box>
+                                <Typography>How about this instead?</Typography>
+                            </Box>
+                        </Box>
+
+                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-start', border: '1px solid #ffffff17'}}>
+                            <Box>
+                                <Typography>I like it. Does this work with</Typography>
+                                <Typography>the brand tweaks <strong>@mamuso</strong>?</Typography>
+                            </Box>
+                        </Box>
+
+
+                        <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17'}}>
+                            <Box sx={{display:'flex', alignItems:'center'}}>
+                                <Typography>This looks great!</Typography>
+                                <Box sx={{height:'14px', width:'1px', marginLeft:'1px', background:'#ededed', animation:' cursoranim 1.5s steps(2) infinite'}} ></Box>
+                                <Box sx={{ background:'#ededed', width:'24px', height:'24px', borderRadius:'50%', marginLeft:'16px', display:'flex', justifyContent:'center', alignItems:'center'}}>
+                                <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M8.7071 3.39641C8.31657 3.00588 7.68341 3.00588 7.29288 3.39641L4.21966 6.46963L3.68933 6.99996L4.74999 8.06062L5.28032 7.53029L7.24999 5.56062V12.25V13H8.74999V12.25V5.56062L10.7197 7.53029L11.25 8.06062L12.3107 6.99996L11.7803 6.46963L8.7071 3.39641Z" fill="#0a0a0a" fill-rule="evenodd"></path></svg>
+                                </Box>
+                            </Box>
+                        </Box>
+                    </Box>
+
+                </Box>
+                </Box>
+            </Box>
+            
+            
+            
+            
 
             {/* section */}
 
