@@ -44,5 +44,26 @@
 }
 
 :root{
-  --ds-background-100 : #0a0a0a
+  --ds-background-100 : #0a0a0a;
+  --ds-teal-600: #0c9784;
+  --ds-gray-900: #a1a1a1;
+  --ds-background-100: #0a0a0a;
+  --ds-gray-alpha-400:#ffffff24;
+  --ds-gray-alpha-100:#ffffff0f;
+  --ds-red-700: #e5484d;
+  --ds-background-200: black;
+  --ds-border: #ffffff17;
+
+}
+
+.progresscircle {
+  stroke-dasharray: calc(var(--stroke-percent) * var(--percent-to-px)) var(--circumference);
+  transform: rotate(calc(-90deg + var(--gap-percent) * var(--offset-factor) * var(--percent-to-deg)));
+  transform-origin: calc(var(--circle-size)/2) calc(var(--circle-size)/2);
+}
+
+.progresscircleback {
+  stroke-dasharray: calc(var(--stroke-percent) * var(--percent-to-px)) var(--circumference);
+  transform: rotate(calc(1turn - 90deg - (var(--gap-percent) * var(--percent-to-deg)))) scaleY(-1);
+  transform-origin: calc(var(--circle-size)/2) calc(var(--circle-size)/2);
 }

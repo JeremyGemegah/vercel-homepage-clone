@@ -256,7 +256,7 @@ function Content(){
                         position:'absolute',
                         height:'100%'
                     }}>
-                        <img  src={graph} style={{position:'absolute', justifySelf:'stretch', width:'100%', height:'100%'}} />
+                        <img alt="an illustration" src={graph} style={{position:'absolute', justifySelf:'stretch', width:'100%', height:'100%'}} />
                     </Box>
 
                     <Box>
@@ -271,17 +271,24 @@ function Content(){
             <Box>
                 <Box sx={{
                     display:'grid',
-                    gridTemplateColumns:'repeat(2, calc(1079/2))',
+                    gridTemplateColumns:'repeat(2, calc(1079px/2))',
                     height: '530px',
                     border:'1px solid #ffffff17',
-                    borderTop:'none'
+                    borderTop:'none',
+                    boxSizing:'border-box'
+                    ,'&>*':{
+                        boxSizing:'border-box'
+                    },
+                   
                 }}>
-                    <Box sx={{ gridColumnStart:'1', gridColumnEnd:'span 1', borderRight:'1px solid #ffffff17', display:'flex', flexDirection:'column', alignItems:'center', color:'white'}}>
-                        <Box sx={{width:'442.5px'}}>
-                            <Box>
-                                <Box>
-                                    <Box> <Typography>vercel-site/<Typography sx={{display:'inline'}}>jvjb4ynna</Typography></Typography> <Typography>1d ago</Typography></Box>
-                                    <Box>
+                    <Box sx={{ gridColumnStart:'1', gridColumnEnd:'span 1', borderRight:'1px solid #ffffff17', color:'white', overflow:'hidden', flexGrow:0, padding:'48px'}}>
+                        <Box sx={{display:'flex', flexDirection:'column', width:'100%'}}>
+
+
+                            <Box sx={{display:'flex', border:'1px solid #ffffff17', padding:'12px', borderRadius:'12px', background:'var(--ds-background-100)', alignSelf:'flex-start'}}>
+                                <Box sx={{display:'flex', flexDirection:'column', gap:'8px'}}>
+                                    <Box sx={{display:'flex', justifyContent:'space-between',color:'var(--ds-gray-900)'}}> <Typography >vercel-site/<Typography sx={{display:'inline', color: 'white'}}>jvjb4ynna</Typography></Typography> <Typography>1d ago</Typography></Box>
+                                    <Box sx={{display:'flex', gap:'8px', alignItems:'center'}}>
                                     <svg data-testid="geist-icon" height="16" stroke-linejoin="round" style={{color:'#a1a1a1'}} viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5ZM8 12C9.95279 12 11.5787 10.6006 11.9298 8.75H15.25H16V7.25H15.25H11.9298C11.5787 5.39935 9.95279 4 8 4C6.04721 4 4.42125 5.39935 4.0702 7.25H0.75H0V8.75H0.75H4.0702C4.42125 10.6006 6.04721 12 8 12Z" fill="currentColor"></path></svg>
 
                                     <Typography sx={{display:'inline'}}>ba5f55f</Typography>
@@ -290,19 +297,207 @@ function Content(){
                                 </Box>
 
 
-                                <Box>
-                                <svg aria-hidden="true" fill="none" height="32" stroke-width="2" viewBox="0 0 100 100" width="32"><circle  cx="50" cy="50" r="45" stroke-width="10" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" class="gauge_arcSecondary__s11_g" stroke="#ffffff24"></circle><circle cx="50" cy="50" r="45" stroke-width="10" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" class="gauge_arc__UGu7u" data-geist-progress-circle-fg="" stroke="#0c9784" ></circle></svg>
+                                <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', marginLeft:'24px'}}>
+                                <svg aria-hidden="true" fill="none" height="32" stroke-width="2" viewBox="0 0 100 100" width="32"><circle cx="50" cy="50" r="45" stroke-width="10" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" class="progresscircle" data-geist-progress-circle-fg="" stroke="var(--ds-teal-600)" style={{opacity:1,'--stroke-percent':90, '--percent-to-px': '2.827433388230814px', '--circumference': 282.7433388230814, '--gap-percent':6, '--offset-factor':0, '--percent-to-deg': '3.6deg', '--circle-size':'100px'}}></circle></svg>
+                                <Typography sx={{ position:'absolute'}}>90</Typography>
                                 </Box>
+                            </Box>
+
+                            <Box sx={{postion:'relative', display:'flex', justifyContent:'center', alignItems:'center', alignSelf:'center'}}>
+                                <Box sx={{position:'absolute', width:'30px', height:'30px', background:'var(--ds-background-100)', display:'flex', justifyContent:'center', alignItems:'center', borderRadius:'50%', transform:'translateY(-6px)', border:'1px solid var(--ds-border)'}}>
+                            <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style={{color: 'var(--ds-gray-900)'}}><path fill-rule="evenodd" clip-rule="evenodd" d="M7.96452 2.5C11.0257 2.5 13.5 4.96643 13.5 8C13.5 11.0336 11.0257 13.5 7.96452 13.5C6.12055 13.5 4.48831 12.6051 3.48161 11.2273L3.03915 10.6217L1.828 11.5066L2.27046 12.1122C3.54872 13.8617 5.62368 15 7.96452 15C11.8461 15 15 11.87 15 8C15 4.13001 11.8461 1 7.96452 1C5.06835 1 2.57851 2.74164 1.5 5.23347V3.75V3H0V3.75V7.25C0 7.66421 0.335786 8 0.75 8H3.75H4.5V6.5H3.75H2.63724C3.29365 4.19393 5.42843 2.5 7.96452 2.5ZM8.75 5.25V4.5H7.25V5.25V7.8662C7.25 8.20056 7.4171 8.51279 7.6953 8.69825L9.08397 9.62404L9.70801 10.0401L10.5401 8.79199L9.91603 8.37596L8.75 7.59861V5.25Z" fill="currentColor"></path></svg>
+                            </Box>
+                            <svg data-size="large" fill="none" height="152" viewBox="0 0 117 152" width="117"><path d="M3.99999 4L3.99999 60C3.99999 66.6274 9.37258 72 16 72L104 72C110.627 72 116 77.3726 116 84L116 152" stroke="url(#paint0_linear_1364_100888)" stroke-width="2"></path><path d="M3.99999 4L3.99999 60C3.99999 66.6274 9.37258 72 16 72L104 72C110.627 72 116 77.3726 116 84L116 152" stroke="url(#paint1_linear_1364_100888)" stroke-width="2"></path><g clip-path="url(#clip0_1364_100888)"><path clip-rule="evenodd" d="M4 0.5L8 7.5H0L4 0.5Z" fill="#45DEC4" fill-rule="evenodd"></path></g><defs><linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1364_100888" x1="116" x2="4" y1="72" y2="72"><stop stop-color="#E5484D"></stop><stop offset="0.5" stop-color="#FFC634"></stop><stop offset="1" stop-color="#45DEC4"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear_1364_100888" x1="116" x2="116" y1="152" y2="1.56712e-05"><stop stop-color="var(--ds-background-200)"></stop><stop offset="0.322368" stop-color="var(--ds-background-200)" stop-opacity="0"></stop></linearGradient><clipPath id="clip0_1364_100888"><rect fill="white" height="8" width="8"></rect></clipPath></defs></svg>
+                                </Box>       
+                            
+                            
+                            
+                            <Box sx={{display:'flex', border:'1px dashed #ffffff17', padding:'12px', borderRadius:'12px', background:'var(--ds-background-100)', alignSelf:'flex-end'}}>
+                                <Box sx={{display:'flex', flexDirection:'column', gap:'8px'}}>
+                                    <Box sx={{display:'flex', justifyContent:'space-between',color:'var(--ds-gray-900)'}}> <Typography >vercel-site/<Typography sx={{display:'inline', color: 'white'}}>gigj178pv</Typography></Typography> <Typography>10min ago</Typography></Box>
+                                    <Box sx={{display:'flex', gap:'8px', alignItems:'center'}}>
+                                    <svg data-testid="geist-icon" height="16" stroke-linejoin="round" style={{color:'#a1a1a1'}} viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5ZM8 12C9.95279 12 11.5787 10.6006 11.9298 8.75H15.25H16V7.25H15.25H11.9298C11.5787 5.39935 9.95279 4 8 4C6.04721 4 4.42125 5.39935 4.0702 7.25H0.75H0V8.75H0.75H4.0702C4.42125 10.6006 6.04721 12 8 12Z" fill="currentColor"></path></svg>
+
+                                    <Typography sx={{display:'inline'}}>bx012mm</Typography>
+                                    <Typography>Fix ESLint error on query</Typography>
+                                    </Box>
+                                </Box>
+
+
+                                <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', marginLeft:'24px'}}>
+                                <svg aria-hidden="true" fill="none" height="32" stroke-width="2" viewBox="0 0 100 100" width="32"><circle cx="50" cy="50" r="45" stroke-width="10" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" class="progresscircleback" stroke="var(--ds-gray-alpha-400)" style={{opacity: 1,'--stroke-percent': 33, '--percent-to-px': '2.827433388230814px', '--circumference': 282.7433388230814, '--gap-percent':6, '--offset-factor':0, '--percent-to-deg': '3.6deg', '--circle-size':'100px'}}></circle>
+                                    <circle cx="50" cy="50" r="45" stroke-width="10" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" class="progresscircle" data-geist-progress-circle-fg="" stroke="var(--ds-red-700)" style={{opacity:1,'--stroke-percent':55, '--percent-to-px': '2.827433388230814px', '--circumference': 282.7433388230814, '--gap-percent':6, '--offset-factor':0, '--percent-to-deg': '3.6deg', '--circle-size':'100px'}}></circle></svg>
+                                <Typography sx={{ position:'absolute'}}>55</Typography>
+                                </Box>
+                            </Box>
+
+
+
+                        </Box>
+                    </Box>
+
+                    <Box sx={{ gridColumnStart:'2', gridColumnEnd:'span 1', width:'100%', padding:'48px'}}>
+                        <Box>
+                            <Box sx={{
+                                border: '1px solid var(--ds-border)'
+                                ,height:'268px'
+                                ,borderRadius:'12px'
+                                ,position:'relative'
+                                ,background: 'var(--ds-background-100)'
+                                ,display:'flex'
+                                ,width:'100%'
+                                ,color:'white'
+                                ,boxSizing:'border-box',
+                                '&>*':{
+                                    boxSizing:'border-box'
+                                }
+                                ,'::before':{
+                                    content:'""'
+                                    ,position:'absolute'
+                                    ,height:'calc(100% + 2px)'
+                                    ,width:'calc(100% + 2px)'
+                                    ,left: '-1px'
+                                    ,bottom:'-3px'
+                                    ,zIndex:1
+                                    ,background:'linear-gradient(to bottom,transparent,black 100%)'
+                                }
+                            }}>
+
+                                <Box sx={{width:'50%', borderRight: ' 1px solid var(--ds-border)',padding:'16px', '&>*':{zIndex:'1'}, display:'flex', flexDirection:'column', gap:'16px'}}>
+                                    <Box>
+                                        <Typography>Conformance</Typography>
+                                    </Box>
+                                    <Box>
+                                        <Box sx={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px', background:'var(--ds-gray-alpha-100)', borderRadius:'12px'}}>
+                                            <Typography sx={{fontSize:'12px', color:'var(--ds-gray-900)'}}>Excellent</Typography>
+                                            <Box sx={{display:'flex', alignItems:'center', gap:'8px', height:'32px'}}>
+                                            <svg aria-hidden="true" fill="none" height="20" stroke-width="2" viewBox="0 0 100 100" width="20"><circle cx="50" cy="50" r="42.5" stroke-width="15" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" class="progresscircle" data-geist-progress-circle-fg="" stroke="var(--ds-teal-600)" style={{opacity:1,'--stroke-percent':90, '--percent-to-px':'2.670353755551324px', '--offset-factor':0,'--circumference':267.0353755551324, '--circle-size':'100px', '--percent-to-deg':'3.6deg', '--gap-percent':9}}></circle></svg>
+                                            <Typography sx={{fontSize:'16px', fontWeight:'600'}}>9.5</Typography>
+
+                                            </Box>
+                                        </Box>
+                                    </Box>
+
+
+                                    <Box>
+                                        <Box sx={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px', background:'var(--ds-gray-alpha-100)', borderRadius:'12px'}}>
+                                            <Typography sx={{fontSize:'12px', color:'var(--ds-gray-900)'}}>Total Issues</Typography>
+                                            <Box sx={{display:'flex', alignItems:'center', gap:'8px', height:'32px'}}>
+                                            <Typography sx={{fontSize:'16px', fontWeight:'600'}}>34</Typography>
+
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                    
+                                    
+                                    <Box>
+                                        <Box sx={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px', background:'var(--ds-gray-alpha-100)', borderRadius:'12px'}}>
+                                            <Typography sx={{fontSize:'12px', color:'var(--ds-gray-900)'}}>Major Issues</Typography>
+                                            <Box sx={{display:'flex', alignItems:'center', gap:'8px', height:'32px'}}>
+                                            <Typography sx={{fontSize:'16px', fontWeight:'600'}}>12</Typography>
+
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                    
+                                </Box>
+
+
+                                <Box sx={{width:'50%', borderLeft:'1px solid var(--ds-border)', padding:'16px', '&>*':{zIndex:'1'}, display:'flex', flexDirection:'column', gap:'16px'}}>
+                                <Box>
+                                        <Typography>Code Owners</Typography>
+                                    </Box>
+                                  
+
+                                    <Box>
+                                        <Box sx={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px', background:'var(--ds-gray-alpha-100)', borderRadius:'12px'}}>
+                                            <Typography sx={{fontSize:'12px', color:'var(--ds-gray-900)'}}>@vercel/design</Typography>
+                                            <Box sx={{display:'flex', alignItems:'center', gap:'8px', height:'32px'}}>
+                                            <Box sx={{display:'flex'}}>
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=rauno&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=gennydee&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+                                                
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=gln&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+                                            </Box>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+
+
+                                    <Box>
+                                        <Box sx={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px', background:'var(--ds-gray-alpha-100)', borderRadius:'12px'}}>
+                                            <Typography sx={{fontSize:'12px', color:'var(--ds-gray-900)'}}>@vercel/eng</Typography>
+                                            <Box sx={{display:'flex', alignItems:'center', gap:'8px', height:'32px'}}>
+                                            <Box sx={{display:'flex'}}>
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=timer&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=jared&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+                                                
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=cramforce&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=gkaragkiaouris&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=tomocchino&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+                                            </Box>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                    
+                                    
+                                    <Box>
+                                        <Box sx={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px', background:'var(--ds-gray-alpha-100)', borderRadius:'12px'}}>
+                                            <Typography sx={{fontSize:'12px', color:'var(--ds-gray-900)'}}>@vercel/marketing</Typography>
+                                            <Box sx={{display:'flex', alignItems:'center', gap:'8px', height:'32px'}}>
+                                            <Box sx={{display:'flex'}}>
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=greetah&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=m0rgane&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+                                                
+                                                <Box sx={{height:'22px', width:'22px', borderRadius:'100%', overflow:'hidden', marginLeft:'-10px', border:'1px solid black'}}>
+                                                    <img alt="an illustration"src={'https://vercel.com/api/www/avatar?u=lindsaygilson&s=44'} style={{width:'100%', height:'100%'}} />
+                                                </Box>
+
+                                            </Box>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                    
+                                        
+                                    
+                                </Box>
+
                             </Box>
                         </Box>
                     </Box>
 
-                    <Box sx={{ gridColumnStart:'2', gridColumnEnd:'span 1'}}>
-
-                    </Box>
-
                 </Box>
             </Box>
+
 
 
 
