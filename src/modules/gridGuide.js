@@ -33,12 +33,13 @@ function GridGuide(){
             gridRowEnd:'span 4',
             border: '1px solid #ffffff17',
             zIndex:'100',
-            inset: 0
+            inset: 0,
+            color:'white'
             }}>
 
-                <Box>
-                    <Typography variant="h1" sx={{fontSize:'47.7px', color: 'rgb(237, 237, 237)'}}>Your complete platform for the web.</Typography>
-                    <Typography>Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.</Typography>
+                <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', height:'100%'}}>
+                    <Typography variant="h1" sx={{fontSize:'47.7px', color: 'rgb(237, 237, 237)', fontWeight:'bold', textAlign:'center'}}>Your complete platform for the web.</Typography>
+                    <Typography sx={{color:'var(--ds-gray-900)', fontSize:'1.25rem', px:'120px', textAlign:'center'}}>Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.</Typography>
                     <Box> <button></button>
                     <button></button>
                     </Box>

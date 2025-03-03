@@ -16,10 +16,10 @@ function Content(){
                 borderTop:'1px solid #ffffff17',
                 height:'16px'
             }}}>
-                <Typography>Develop with your favorite tools <svg aria-hidden="true" fill="none" height="28" viewBox="0 0 28 28" width="28"><path d="M2.50012 25.5L11.2151 16.3009C11.3749 16.1322 11.3749 15.8679 11.2151 15.6991L2.50012 6.5" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.5"></path><path d="M14.75 26.25H26.25" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.5"></path></svg> </Typography>
-                <Typography>Launch globally, instantly 
-                <svg aria-hidden="true" fill="none" height="28" viewBox="0 0 28 28" width="28"><circle cx="14" cy="14" r="12.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></circle><path d="M1.75 10.8756C4.90656 10.102 9.23046 9.625 14 9.625C18.7695 9.625 23.0934 10.102 26.25 10.8756M1.75 17.1244C4.90656 17.898 9.23046 18.375 14 18.375C18.7695 18.375 23.0934 17.898 26.25 17.1244" stroke="currentColor" stroke-linejoin="round" stroke-width="3.5"></path><path d="M14 1.75C14.2667 1.75 14.6587 1.86617 15.1678 2.35835C15.6853 2.85867 16.2313 3.66714 16.7278 4.80194C17.7184 7.06634 18.375 10.317 18.375 14C18.375 17.683 17.7184 20.9337 16.7278 23.1981C16.2313 24.3329 15.6853 25.1413 15.1678 25.6416C14.6587 26.1338 14.2667 26.25 14 26.25C13.7333 26.25 13.3413 26.1338 12.8322 25.6416C12.3147 25.1413 11.7687 24.3329 11.2722 23.1981C10.2816 20.9337 9.625 17.683 9.625 14C9.625 10.317 10.2816 7.06634 11.2722 4.80194C11.7687 3.66714 12.3147 2.85867 12.8322 2.35835C13.3413 1.86617 13.7333 1.75 14 1.75Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg>
-                     Keep pushing 
+                <Typography sx={{fontWeight:'bold', fontSize:'32px'}}>Develop with your favorite tools &nbsp; <svg aria-hidden="true" fill="none" height="28" viewBox="0 0 28 28" width="28"><path d="M2.50012 25.5L11.2151 16.3009C11.3749 16.1322 11.3749 15.8679 11.2151 15.6991L2.50012 6.5" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.5"></path><path d="M14.75 26.25H26.25" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.5"></path></svg> </Typography>
+                <Typography sx={{fontWeight:'bold', fontSize:'32px'}}>Launch globally, instantly &nbsp;
+                <svg aria-hidden="true" fill="none" height="28"  viewBox="0 0 28 28" width="28"><circle cx="14" cy="14" r="12.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" style={{fontWeight:'normal'}}></circle><path d="M1.75 10.8756C4.90656 10.102 9.23046 9.625 14 9.625C18.7695 9.625 23.0934 10.102 26.25 10.8756M1.75 17.1244C4.90656 17.898 9.23046 18.375 14 18.375C18.7695 18.375 23.0934 17.898 26.25 17.1244" stroke="currentColor" style={{fontWeight:'normal'}} stroke-linejoin="round" stroke-width="3.5"></path><path d="M14 1.75C14.2667 1.75 14.6587 1.86617 15.1678 2.35835C15.6853 2.85867 16.2313 3.66714 16.7278 4.80194C17.7184 7.06634 18.375 10.317 18.375 14C18.375 17.683 17.7184 20.9337 16.7278 23.1981C16.2313 24.3329 15.6853 25.1413 15.1678 25.6416C14.6587 26.1338 14.2667 26.25 14 26.25C13.7333 26.25 13.3413 26.1338 12.8322 25.6416C12.3147 25.1413 11.7687 24.3329 11.2722 23.1981C10.2816 20.9337 9.625 17.683 9.625 14C9.625 10.317 10.2816 7.06634 11.2722 4.80194C11.7687 3.66714 12.3147 2.85867 12.8322 2.35835C13.3413 1.86617 13.7333 1.75 14 1.75Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg>
+                    &nbsp; Keep pushing &nbsp;
                      <svg aria-hidden="true" fill="none" height="28" viewBox="0 0 28 28" width="28"><path d="M7 10.9375V9.1875H3.5V10.9375H7ZM3.5 10.9375V28H7V10.9375H3.5Z" fill="currentColor"></path><path d="M22.75 26.25C20.817 26.25 19.25 24.683 19.25 22.75C19.25 20.817 20.817 19.25 22.75 19.25C24.683 19.25 26.25 20.817 26.25 22.75C26.25 24.683 24.683 26.25 22.75 26.25Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path><path d="M5.25 8.75C3.317 8.75 1.75 7.183 1.75 5.25C1.75 3.317 3.317 1.75 5.25 1.75C7.183 1.75 8.75 3.317 8.75 5.25C8.75 7.183 7.183 8.75 5.25 8.75Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path><path d="M19.25 22.75C15.537 22.75 11.976 21.275 9.35051 18.6495C6.725 16.024 5.25 12.463 5.25 8.75" stroke="currentColor" stroke-linejoin="round" stroke-width="3.5"></path></svg>
                      </Typography>
 
@@ -48,7 +48,8 @@ function Content(){
                         gridColumnStart:'1'
                         ,gridColumnEnd:'span 1',
                         borderRight: '1px solid #ffffff17',
-                        padding:'48px'
+                        padding:'48px',
+                        paddingTop:'32px'
                         ,overflow:'hidden',
                         '& > *':{
                             boxSizing:'border-box'
@@ -68,6 +69,19 @@ function Content(){
                             flexShrink:1
                             ,overflow: 'hidden'
                         }}>
+                            <Box sx={{display:'flex', flexDirection:'column', gap:'16px', marginBottom:'32px'}}>
+                                <Box>
+                                <svg height="16" style={{'shape-rendering':'unset',color:'var(--ds-gray-900)',transform:'translateZ(0)'}} width="16" aria-hidden="true"><use href="/vc-ap-vercel-marketing/_next/static/media/terminal.0a222ec1.svg#terminal"></use></svg>
+
+                                <Typography sx={{color:'var(--ds-gray-900)'}}>Git-connected Deploys</Typography>
+                                </Box>
+                                <Box>
+                                <Typography sx={{fontWeight:'bold', fontSize:'24px', lineHeight:'32px'}}>
+                                    <strong>From localhost to https, in seconds.</strong>
+                                </Typography>
+                                <Typography sx={{fontWeight:'bold', fontSize:'24px', color:'var(--ds-gray-900)'}}>Deploy from Git or your CLI.</Typography>
+                            </Box>
+                            </Box>
 
                     <Box sx={{
                             border:'1px solid #ffffff17'
@@ -93,9 +107,15 @@ function Content(){
                             </Box>
                         </Box>
                         <Box sx={{ '& > *': {
-                            maskImage: 'linear-gradient(to right, #454545 53.47%, transparent 100%)'
+                            maskImage: 'linear-gradient(to right, #454545 53.47%, transparent 100%)',
+                            fontWeight:'400',
+                            fontSize:'0.75rem'
+                            ,lineHeight:'1.3rem',
+                            wordSpacing:'.2rem'
+                            ,letterSpacing:'.07rem'
+                            
                         }, color:'#ededed'}}>
-                            <Typography><Typography sx={{display:'inline', color:'#1f1f1f'}}><Typography sx={{ display:'inline', color:'#a1a1a1'}}>▲ ~ vercel-site/</Typography> git push</Typography></Typography>
+                            <Typography><Typography sx={{display:'inline', fontSize:'0.75rem',fontWeight:'400',lineHeight:'1.3rem', wordSpacing:'.2rem', letterSpacing:'.07rem', color:'#1f1f1f'}}><Typography sx={{ display:'inline', color:'#a1a1a1', fontSize:'0.75rem',fontWeight:'400',lineHeight:'1.3rem', wordSpacing:'.2rem', letterSpacing:'.07rem',}}>▲ ~ vercel-site/</Typography> git push</Typography></Typography>
                             <Typography >Enumerating objects: 1, done.</Typography>
                             <Typography>{"Counting objects: 100% (1/1), done."}</Typography>
                             <Typography>{"Writing objects: 100% (1/1), 72 bytes, done."}</Typography>
@@ -165,7 +185,8 @@ function Content(){
                 <Box sx={{
                     gridColumnStart:'2'
                     ,gridColumnEnd:'span 1',
-                    padding:'48px'
+                    padding:'48px',
+                    paddingTop:'32px'
                 }}>
                     <Box sx={{
                         display:'flex'
@@ -173,16 +194,31 @@ function Content(){
                         ,width:'100%'
                         ,gap:'24px'
                     }}>
+                        <Box sx={{display:'flex', flexDirection:'column', gap:'16px', marginBottom:'32px'}}>
+                                <Box>
+                                <svg height="16" style={{'shape-rendering':'unset',color:'var(--ds-gray-900)',transform:'translateZ(0)'}} width="16" aria-hidden="true"><use href="/vc-ap-vercel-marketing/_next/static/media/terminal.0a222ec1.svg#terminal"></use></svg>
+
+                                <Typography sx={{color:'var(--ds-gray-900)'}}>Collective pre-production</Typography>
+                                </Box>
+                                <Box>
+                                <Typography sx={{ fontSize:'24px', lineHeight:'32px', color:'var(--ds-gray-900)'}}>
+                                    <strong style={{color:'white', fontWeight:'bold'}}>Every deploy is remarkable.</strong> Chat with your team on real, production-grade UI, not just designs.
+                                </Typography>
+                               
+                            </Box>
+                            </Box>
+
+
                         <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-start', border: '1px solid #ffffff17'}}>
-                            <Box>
-                                <Typography>Swapped out the <Typography sx={{display:'inline'}}>button</Typography>for</Typography>
-                                <Typography>some variants we needed</Typography>
+                            <Box >
+                                <Typography sx={{fontSize:'14px'}}>Swapped out the <Typography sx={{display:'inline', fontSize:'13px', padding:'2px 4px', background:'#1f1f1f', color:'var(--ds-gray-900)', borderRadius:'4px'}}>button</Typography> for</Typography>
+                                <Typography sx={{fontSize:'14px'}}>some variants we needed</Typography>
                             </Box>
                         </Box>
 
                         <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17', position:'relative'}}>
                             <Box>
-                                <Typography>How about this instead?</Typography>
+                                <Typography sx={{fontSize:'14px'}}>How about this instead?</Typography>
                             </Box>
                             <Box>
                                 <Box sx={{position:'absolute', left:'0', top:'0', transform:'translateX(calc(-100% - 15px))'}}>
@@ -196,8 +232,8 @@ function Content(){
 
                         <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-start', border: '1px solid #ffffff17', position:'relative'}}>
                             <Box>
-                                <Typography>I like it. Does this work with</Typography>
-                                <Typography>the brand tweaks <strong>@mamuso</strong>?</Typography>
+                                <Typography sx={{fontSize:'14px'}}>I like it. Does this work with</Typography>
+                                <Typography sx={{fontSize:'14px'}}>the brand tweaks <strong>@mamuso</strong>?</Typography>
                             </Box>
 
                             {/* pointer */}
@@ -214,7 +250,7 @@ function Content(){
 
                         <Box sx={{ padding:'12px', borderRadius:'12px' , background:'#0a0a0a', alignSelf:'flex-end', border: '1px solid #ffffff17', position:'relative'}}>
                             <Box sx={{display:'flex', alignItems:'center'}}>
-                                <Typography>This looks great!</Typography>
+                                <Typography sx={{fontSize:'14px'}}>This looks great!</Typography>
                                 <Box sx={{height:'14px', width:'1px', marginLeft:'1px', background:'#ededed', animation:' cursoranim 1.5s steps(2) infinite'}} ></Box>
                                 <Box sx={{ background:'#ededed', width:'24px', height:'24px', borderRadius:'50%', marginLeft:'16px', display:'flex', justifyContent:'center', alignItems:'center'}}>
                                 <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M8.7071 3.39641C8.31657 3.00588 7.68341 3.00588 7.29288 3.39641L4.21966 6.46963L3.68933 6.99996L4.74999 8.06062L5.28032 7.53029L7.24999 5.56062V12.25V13H8.74999V12.25V5.56062L10.7197 7.53029L11.25 8.06062L12.3107 6.99996L11.7803 6.46963L8.7071 3.39641Z" fill="#0a0a0a" fill-rule="evenodd"></path></svg>

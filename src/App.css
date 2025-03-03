@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+*{
+  font-family: 'Geist'!important;
+  
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -67,3 +72,22 @@
   transform: rotate(calc(1turn - 90deg - (var(--gap-percent) * var(--percent-to-deg)))) scaleY(-1);
   transform-origin: calc(var(--circle-size)/2) calc(var(--circle-size)/2);
 }
+
+@font-face {
+  font-family: "Geist";
+  src: url('./fonts/Geist-Regular-BF6569491e3eff1.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url('./fonts/Geist-Bold-BF6569491da5a14.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url('./fonts/Geist-Light-BF6569491dc9c01.otf') format('opentype');
+  font-weight: lighter;
+}
+
